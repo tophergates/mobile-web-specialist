@@ -7,11 +7,10 @@ If we pick an online first approach, in which of the following conditions will o
 
 <details>
   <summary>ANSWER</summary>
-  <p>
-    - [x] Good Connectivity
-    - [ ] Poor Connectivity / Lie-fi
-    - [x] Offline
-  </p>
+  <ul>
+    <li>Good Connectivity</li>
+    <li>Offline</li>
+  </ul>
   <p>
     Online first works the same with good connectivity. Things also work offline with fallbacks instead of a browser error page. However, unfortunatley because we're waiting on the network before we do anything, things are still terrible with lie-fi.
   </p>

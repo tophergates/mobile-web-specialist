@@ -11,4 +11,4 @@ This is the offline-first approach. This means the user is happy online, offline
 
 - - -
 
-Next: [Quiz: What Can Slow Us Down?](./04-quiz-what-shows-us-down.md)
+Next: [Quiz: What Can Slow Us Down?](./04-quiz-what-slows-us-down.md)

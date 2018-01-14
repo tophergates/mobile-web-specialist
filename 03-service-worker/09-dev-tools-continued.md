@@ -11,7 +11,7 @@ If you refresh normally now, the request will go through the new Service Worker.
 
 This way of bypassing the Service Worker and then refreshing is easier than navigating away from the origin or closing the tab, but Chrome's developer tools offer an even easier way:
 
-In the `Application` tab of Chrome developer tools, there is an option called `Force update on page load`. This changes the Service Worker lifecycle to be developer friendly. In this mode, when you hit refresh, rather than refreshing the page it fetches a Service Worker and treats it as a new version whether it has changed or not and lets it become active immediately. With this option active, you do not have to hold `SHIFT` and refresh or navigate away from the page.
+In the `Application` tab of Chrome developer tools, there is an option called `Update on reload`. This changes the Service Worker lifecycle to be developer friendly. In this mode, when you hit refresh, rather than refreshing the page it fetches a Service Worker and treats it as a new version whether it has changed or not and lets it become active immediately. With this option active, you do not have to hold `SHIFT` and refresh or navigate away from the page.
 
 - - -
 

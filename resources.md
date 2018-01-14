@@ -24,7 +24,6 @@ I have been reading through the discussion forums and the Slack channel and have
   </p>
   <ul>
     <li>Successful completion of course material and quizzes. To be clear, there is no reward for finishing first or early. We will evaluate everyone's progress after the course ends in early April. This means making as much use of the forums as possible in order to iterate on your work.</li>
-    
     <li>Support of fellow students and active participation in forums and on Slack. We have seen time and time again that the most successful students are those that learn in a community. We expect to see continuous engagement on Slack and the forums over the next three months.</li>
   </ul>
 </details>

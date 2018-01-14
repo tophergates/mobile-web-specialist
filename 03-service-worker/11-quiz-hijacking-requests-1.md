@@ -15,19 +15,19 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
   <summary>SOLUTION</summary>
   <p>
   
-    Set the `Content-Type` property of the headers to `text/html`:
+  Set the `Content-Type` property of the headers to `text/html`:
     
-    ```js
-    self.addEventListener('fetch', function(event) {
-      event.respondWith(
-        new Reponse('<p class="a-winner-is-me">Responding from the Service Worker with HTML.</p>', {
-          headers: {
-            'Content-Type': 'text/html'
-          }
-        })
-      )
-    })
-    ```
+  ```js
+  self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      new Reponse('<p class="a-winner-is-me">Responding from the Service Worker with HTML.</p>', {
+        headers: {
+          'Content-Type': 'text/html'
+        }
+      })
+    )
+  })
+  ```
     
   </p>
 </details>

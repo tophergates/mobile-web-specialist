@@ -3,4 +3,4 @@
 
 - - -
 
-Next: [Quiz: Caching Avatars](./13-caching-avatars.md)
+Next: [Quiz: Caching Avatars](./13-quiz-caching-avatars.md)

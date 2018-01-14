@@ -18,7 +18,7 @@ I have been reading through the discussion forums and the Slack channel and have
 <br>
 
 <details>
-  <summary><strong>On what basis are the top 1,000 students decided in the intermediate track?<strong></summary>
+  <summary><strong>On what basis are the top 1,000 students decided in the intermediate track?</strong></summary>
   <p>
     When phase one ends on April 10, Udacity and Google will review your work and progress from this initial part of the scholarship program. In general, we will allocate the follow-up scholarships to high performing students based on this criteria:
   </p>

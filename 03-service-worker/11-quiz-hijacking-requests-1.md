@@ -34,4 +34,4 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
 
 - - -
 
-Next: [Hijacking Requests 2](./12/hijacking-requests-2.md)
+Next: [Hijacking Requests 2](./12-hijacking-requests-2.md)

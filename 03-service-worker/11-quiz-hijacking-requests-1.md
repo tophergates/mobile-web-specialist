@@ -14,7 +14,9 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
 <details>
   <summary>SOLUTION</summary>
   <p>
-    &nbsp;
+
+    Set the 'Content-Type' property of the headers to 'text/html':
+    
     ```js
     self.addEventListener('fetch', function(event) {
       event.respondWith(

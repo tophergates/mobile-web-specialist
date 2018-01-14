@@ -14,7 +14,7 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
 <details>
   <summary>SOLUTION</summary>
   <p>
-  
+    &nbsp;
     ```js
     self.addEventListener('fetch', function(event) {
       event.respondWith(

@@ -8,4 +8,4 @@ Download Chrome Canary: https://www.google.com/chrome/browser/canary.html
 
 - - -
 
-Next: [Quiz: Service Worker Dev Tools](./07-quiz-dev-tols.md)
+Next: [Quiz: Service Worker Dev Tools](./07-quiz-dev-tools.md)

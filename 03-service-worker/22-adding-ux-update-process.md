@@ -1,11 +1,11 @@
 # 03.22: ADDING UX TO THE UPDATE PROCESS
 I think we can safely say that we have completed unobtrusive app updates in the last section. Now, we need to get the user onto the latest version quickly and painlessly.
 
-  [X] Unobtrusive App Updates
-  [ ] Get the user onto the latest version
-  [ ] Continually update cache of posts
-  [ ] Cache photos
-  [ ] Cache avatars
+  - [X] Unobtrusive App Updates
+  - [ ] Get the user onto the latest version
+  - [ ] Continually update cache of posts
+  - [ ] Cache photos
+  - [ ] Cache avatars
 
 Ideally we want the user to be on the latest version as soon as possible. But as we saw, when a new Service Worker is discovered it waits until aol pages using the current version go away before it can take over. This can take a long time, so lets do something better.
 

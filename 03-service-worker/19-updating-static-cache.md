@@ -1,11 +1,11 @@
 # 03.19: UPDATING THE STATIC CACHE
 To get started, here is the todo list that gets us from where we are now to full `offline first` success:
 
-  [ ] Unobtrusive App Updates
-  [ ] Get the user onto the latest version
-  [ ] Continually update cache of posts
-  [ ] Cache photos
-  [ ] Cache avatars
+  - [ ] Unobtrusive App Updates
+  - [ ] Get the user onto the latest version
+  - [ ] Continually update cache of posts
+  - [ ] Cache photos
+  - [ ] Cache avatars
 
 The remainder of the course will be about doing this, starting with updating the application.
 

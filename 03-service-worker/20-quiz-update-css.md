@@ -22,63 +22,65 @@ In the Chrome developer tools in the `Application` tab, you should see a Service
 <details>
   <summary>SOLUTION</summary>
   <p>
-    ```js
-    var staticCacheName = 'wittr-static-v2';
+  
+  ```js
+  var staticCacheName = 'wittr-static-v2';
+  
+  self.addEventListener('install', function(event) {
+    event.waitUntil(
+      caches.open(staticCacheName)
+        .then(function(cache) {
+          return cache.addAll([
+            '/',
+            'js/main.js',
+            'css/main.css',
+            'imgs/icon.png',
+            'https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff',
+            'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff'
+          ]);
+        })
+    );
+  });
+  
+  // The easy way:
+  // self.addEventListener('activate', function(event) {
+  //   event.waitUntil(
+  //     caches.delete('wittr-static-v1')
+  //   );
+  // });
+  
+  // The scalable and safer way:
+  self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches.keys()
+        .then(function(cacheNames) {
+          return Promise.all(
+            cacheNames.filter(function(cacheName) {
+              return cachName.startsWith('witter-') && cacheName !== staticCacheName;
+            }).map(function(cacheName) {
+              return caches.delete(cacheName);
+            })
+          );
+        })
+    );
+  })
+  
+  self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(function(response) {
+          return response || fetch(event.request);
+        })
+    );
+  });
+  ```
     
-    self.addEventListener('install', function(event) {
-      event.waitUntil(
-        caches.open(staticCacheName)
-          .then(function(cache) {
-            return cache.addAll([
-              '/',
-              'js/main.js',
-              'css/main.css',
-              'imgs/icon.png',
-              'https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff',
-              'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff'
-            ]);
-          })
-      );
-    });
+  First we get all the caches keys. This returns a promise with the cache names. We return `Promise.all` which takes an array of `Promises` and waits for them all to resolve.
     
-    // The easy way:
-    // self.addEventListener('activate', function(event) {
-    //   event.waitUntil(
-    //     caches.delete('wittr-static-v1')
-    //   );
-    // });
+  We filter the cache names because we only care about caches that start with `wittr-` and do not equal the `staticCacheName` (the name of our current cache).
     
-    // The scalable and safer way:
-    self.addEventListener('activate', function(event) {
-      event.waitUntil(
-        caches.keys()
-          .then(function(cacheNames) {
-            return Promise.all(
-              cacheNames.filter(function(cacheName) {
-                return cachName.startsWith('witter-') && cacheName !== staticCacheName;
-              }).map(function(cacheName) {
-                return caches.delete(cacheName);
-              })
-            );
-          })
-      );
-    })
+  Then we `map` over the filtered results, deleting each of those caches.
     
-    self.addEventListener('fetch', function(event) {
-      event.respondWith(
-        caches.match(event.request)
-          .then(function(response) {
-            return response || fetch(event.request);
-          })
-      );
-    });
-    ```
-    
-    First we get all the caches keys. This returns a promise with the cache names. We return `Promise.all` which takes an array of `Promises` and waits for them all to resolve.
-    
-    We filter the cache names because we only care about caches that start with `wittr-` and do not equal the `staticCacheName` (the name of our current cache).
-    
-    Then we `map` over the filtered results, deleting each of those caches.
   </p>
 </details>
 

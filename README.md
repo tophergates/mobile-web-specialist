@@ -60,20 +60,20 @@ I hope my fellow students will find this information useful to them. Happy codin
     - [Quiz: Caching the Page Skeleton](./03-service-worker/26-quiz-caching-page-skeleton.md)
   - [Lesson 04: IndexedDB and Caching](./04-idb)
     - [Introducing the IDB Promised Library](./04-idb/01-intro-idb.md)
-    - Getting Started with IDB
-    - Quiz: Getting Started with IDB
-    - Quiz: More IDB
-    - Using the IDB Cache and Display Entries
-    - Quiz: Using IDB Cache
-    - Quiz: Using IDB 2
-    - Quiz: Cleaning IDB
-    - Cache Photos
-    - Quiz: Cache Photos
-    - Cleaning Photo Cache
-    - Quiz: Cleaning Photo Cache
-    - Quiz: Caching Avatars
-    - Outro
-  - Lesson 05: Next Up
+    - [Getting Started with IDB](./04-idb/02-getting-started.md)
+    - [Quiz: Getting Started with IDB](./04-idb/03-quiz-getting-started.md)
+    - [Quiz: More IDB](./04-idb/04-quiz-more-idb.md)
+    - [Using the IDB Cache and Display Entries](./04-idb/05-idb-cache-display-entries.md)
+    - [Quiz: Using IDB Cache](./04-idb/06-quiz-idb-cache.md)
+    - [Quiz: Using IDB 2](./04-idb/07-quiz-using-idb-2.md)
+    - [Quiz: Cleaning IDB](./04-idb/08-quiz-cleaning-idb.md)
+    - [Cache Photos](./04-idb/09-cache-photos.md)
+    - [Quiz: Cache Photos](./04-idb/10-quiz-cache-photos.md)
+    - [Cleaning Photo Cache](./04-idb/11-cleaning-photo-cache.md)
+    - [Quiz: Cleaning Photo Cache](./04-idb/12-quiz-cleaning-photo-cache.md)
+    - [Quiz: Caching Avatars](./04-idb/13-quiz-caching-avatars.md)
+    - [Outro](./04-idb/14-outro.md)
+  - Lesson 05: Next Up (**take a breather!**)
   - Lesson 06: Syntax
     - Harmony, ES6, ES2015...
     - Let and Const

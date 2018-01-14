@@ -51,4 +51,4 @@ You can confirm your changes are working by viewing the source on the root page.
 
 - - -
 
-Next: [Introducing the IDB](../04-idb/01-intro-idb.md)
+Next: [Introducing the IDB Promised Library](../04-idb/01-intro-idb.md)

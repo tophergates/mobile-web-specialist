@@ -14,8 +14,8 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
 <details>
   <summary>SOLUTION</summary>
   <p>
-
-    Set the 'Content-Type' property of the headers to 'text/html':
+  
+    Set the `Content-Type` property of the headers to `text/html`:
     
     ```js
     self.addEventListener('fetch', function(event) {
@@ -28,6 +28,7 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
       )
     })
     ```
+    
   </p>
 </details>
 

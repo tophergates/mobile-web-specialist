@@ -1,5 +1,5 @@
 # 03.02: QUIZ: SCOPING QUIZ
-Given this registration code, which page URLs will this service worker control?
+Given this registration code, which page URLs will this `Service Worker` control?
 
 ```js
 navigator.serviceWorker.register('/sw.js', {
@@ -23,7 +23,9 @@ navigator.serviceWorker.register('/sw.js', {
     <li>/foo/bar</li>
   </ul>
   <p>
-    The Service Worker will control any page URL that begins with the scope. Remember, the trailing slash is important!
+  
+    The `Service Worker` will control any page URL that begins with the scope. Remember, the trailing slash is important!
+    
   </p>
 </details>
 

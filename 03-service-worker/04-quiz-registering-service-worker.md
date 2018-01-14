@@ -9,7 +9,7 @@ $ git checkout task-register-sw
 Once the task is complete, enter the Task ID: **registered**
 
 ## CODING TASK
-Register the Service Worker
+Register the `Service Worker`
 
 <details>
   <summary>SOLUTION</summary>
@@ -29,7 +29,8 @@ Register the Service Worker
     });
   ```
   
-  Refresh the page once after completing your code to register the Service Worker. Refresh the page a second time to begin seeing console.log messages from the Service Worker fetch event.
+  Refresh the page once after completing your code to register the `Service Worker`. Refresh the page a second time to begin seeing `console.log` messages from the `Service Worker` `fetch` event.
+  
   </p>
 </details>
 

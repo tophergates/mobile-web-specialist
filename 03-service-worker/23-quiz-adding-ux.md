@@ -9,13 +9,13 @@ $ git checkout task-update-notify
 Once the task is complete, enter the Task ID: **update-notify**
 
 ## CODING TASK
-We're going to edit a different file this time: in `public/js/main/IndexController.js`. You might remember this file from earlier in the course when you registered a Service Worker.
+We're going to edit a different file this time: in `public/js/main/IndexController.js`. You might remember this file from earlier in the course when you registered a `Service Worker`.
 
 There's a new method here: `_updateReady`. Calling this will show a notification to the user. Your job is to call it at the correct time(s).
 
-There is a series of comments to guide you along the way. Once you've coded it up, you'll need to get those changes picked up by the browser. The easiest way to accomplish this is to delete the Service Worker, then refresh the page. This will refetch and cache your JavaScript.
+There is a series of comments to guide you along the way. Once you've coded it up, you'll need to get those changes picked up by the browser. The easiest way to accomplish this is to delete the `Service Worker`, then refresh the page. This will refetch and cache your JavaScript.
 
-Now, make a change to your Service Worker. Adding a simple comment will suffice. Then refresh the page.
+Now, make a change to your `Service Worker`. Adding a simple comment will suffice. Then refresh the page once more.
 
 Once you've got the notification working, head over to the settings page and type the Task ID to verify your solution is correct.
 

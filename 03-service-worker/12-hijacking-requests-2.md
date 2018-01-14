@@ -1,11 +1,11 @@
 # 03.12: HIJACKING REQUESTS 2
 Now that we know how to hijack a request and respond with basic HTML, let's do something cooler...
 
-Let's go to the network for the response, but not for the thing that was requested. There is an API to achieve this: `fetch`.
+Let's go to the network for the `Response`, but not for the thing that was requested. There is an API to achieve this: `fetch`.
 
-You might be thinking: "Isn't this what XMLHttpRequest" is for?" No, just... no! Much of the XHR API is 15 years old! Even from the outset, it wasn't particularly well thought out.
+You might be thinking: "Isn't this what `XMLHttpRequest` is for?" No, just... no! Much of the `XHR API` is 15 years old! Even from the outset, it wasn't particularly well thought out.
 
-As an example, here's the code to fetch some JSON from the URL `/foo`:
+As an example, here's the code to `fetch` some `JSON` from the URL `/foo`:
 
 ```js
 var client = new XMLHttpRequest();
@@ -40,9 +40,9 @@ fetch('/foo')
   });
 ```
 
-Fetch returns a promise that resolves to the response. Then we can read the response as JSON, and then do something with the results. We can catch errors from either the request, or reading the response. DONE!
+`Fetch` returns a `Promise` that resolves to the `Response`. `Then` we can read the `Response` as `JSON`, and then do something with the results. We can `catch` errors from either the request, or reading the `Response`. DONE!
 
-As it turns out, back in our Service Worker, `event.respondWith` takes either a `Response` or a `Promise` that resolves to a `Response`. Fetch returns a `Promise` that resolves to a `Response`, so they compose together really well.
+As it turns out, back in our `Service Worker`, `event.respondWith` takes either a `Response` or a `Promise` that resolves to a `Response`. Since `fetch` returns a `Promise` that resolves to a `Response`, they compose together really well.
 
 Let's respond with a `fetch` for a `.gif` file:
 
@@ -56,7 +56,7 @@ self.addEventListener('fetch', function(event) {
 
 We've just served up different content using the network!
 
-The Fetch API performs a normal browser fetch, so the results may come from the cache. That is a benefit in this case as we want the `.gif` to cache as usual.
+The `Fetch API` performs a normal browser `fetch`, so the results may come from the cache. That is a benefit in this case as we want the `.gif` to cache as usual.
 
 - - -
 

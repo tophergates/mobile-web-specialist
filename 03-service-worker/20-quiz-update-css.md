@@ -11,13 +11,13 @@ Once the task is complete, enter the Task ID: **new-cache-ready**
 ## CODING TASK
 This time, make sure the `Update on reload` option is disabled in Chrome developer tools.
 
-Take a look at the code located in `public/js/sw/index.js`. Your task is to change the theme of the site. Thankfully, this is pretty easy as all the colors are stored in variables.
+Take a look at the code located in `public/js/sw/index.js`. Your task is to change the theme of the site. Thankfully, this is pretty easy as all the colors are stored SCSS in variables.
 
 You can see those variables in `public/scss/_theme.scss`. You can either uncomment the green and pink theme, or make one of your own up. The only requirement is that the primary color changes so that the site's header changes color.
 
-Then, in the Service Worker, update the cache name and use the `activate` event to remove the old cache. Once you've done that, reload the page to see it working.
+Then, in the `Service Worker`, update the cache name and use the `activate` event to remove the old cache. Once you've done that, reload the page to see it working.
 
-In the Chrome developer tools in the `Application` tab, you should see a Service Worker in the waiting position. Don't let it activate yet! Instead, head over to the test page and enter the Task ID to confirm your solution is working.
+In the Chrome developer tools in the `Application` tab, you should see a `Service Worker` in the waiting position. **Don't let it activate yet!** Instead, head over to the test page and enter the Task ID to confirm your solution is working.
 
 <details>
   <summary>SOLUTION</summary>
@@ -75,12 +75,12 @@ In the Chrome developer tools in the `Application` tab, you should see a Service
   });
   ```
     
-  First we get all the caches keys. This returns a promise with the cache names. We return `Promise.all` which takes an array of `Promises` and waits for them all to resolve.
+  First we get all the keys of any existing caches using `caches.keys`. This returns a `Promise` with that resolves to an `Array` of cache names. We return `Promise.all` which takes an `Array` of `Promise`s and waits for all of those `Promise`s to resolve.
     
-  We filter the cache names because we only care about caches that start with `wittr-` and do not equal the `staticCacheName` (the name of our current cache).
+  We then `filter` the `Array` of cache names; remember, we only care about caches that start with `wittr-` and do not equal the `staticCacheName` (the name of our current cache).
     
-  Then we `map` over the filtered results, deleting each of those caches.
-    
+  Finally, we `map` over the filtered `Array` and delete each of those caches with `caches.delete`.
+  
   </p>
 </details>
 

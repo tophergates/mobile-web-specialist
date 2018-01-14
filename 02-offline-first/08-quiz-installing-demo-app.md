@@ -1,7 +1,7 @@
 # 02.08: QUIZ: INSTALLING THE DEMO APP
 
-  - Install NodeJS
-  - Install Git
+  - Install NodeJS (https://nodejs.org/en/)
+  - Install Git (https://git-scm.com/)
   - Clone Project Repository from Github
 
 ```shell

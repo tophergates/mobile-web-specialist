@@ -9,13 +9,15 @@ $ git checkout task-custom-response
 Once the task is complete, enter the Task ID: **html-response**
 
 ## CODING TASK
-Over in the Service Worker script file, located at `public/js/sw/index.js`, alter the Service Worker so it responds with some HTML. It can be whatever HTML you want as long as it includes the class name, `a-winner-is-me`. Make sure the `Update on reload` option is selected in the Chrome developer tools on the `Application` tab so you can see your changes to the Service Worker upon page refresh.
+Over in the `Service Worker` script file, located at `public/js/sw/index.js`, alter the `Service Worker` so it responds with some HTML. It can be whatever HTML you want as long as it includes the class name, `a-winner-is-me`. 
+
+Make sure the `Update on reload` option is selected in the Chrome developer tools on the `Application` tab so you can see your changes to the `Service Worker` upon page refresh.
 
 <details>
   <summary>SOLUTION</summary>
   <p>
   
-  Set the `Content-Type` property of the headers to `text/html`:
+  Set the `Content-Type` property of the `headers` to `text/html`:
     
   ```js
   self.addEventListener('fetch', function(event) {

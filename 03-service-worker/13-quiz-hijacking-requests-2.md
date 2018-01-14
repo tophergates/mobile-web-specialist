@@ -20,9 +20,9 @@ Take a look at the code located in `public/js/sw/index.js`. As you can see, your
     if (event.request.url.endsWith('.jpg')) {
       event.respondWith(
         fetch('/imgs/dr-evil.gif')
-      )
+      );
     }
-  })
+  });
   ```
   
   </p>

@@ -9,7 +9,7 @@ $ git checkout task-cache-response
 Once the task is complete, enter the Task ID: **cache-served**
 
 ## CODING TASK
-Take a look at the code located in `public/js/sw/index.js`. Your task is to respond to a fetch event with an entry from the cache if there is one. If there isn't, fetch from the network.
+Take a look at the code located in `public/js/sw/index.js`. Your task is to respond to a `fetch` event with an entry from the cache if there is one and if there isn't, `fetch` it from the network.
 
 <details>
   <summary>SOLUTION</summary>

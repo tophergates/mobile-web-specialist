@@ -9,7 +9,9 @@ $ git checkout log-requests
 Once the task is complete, enter the Task ID: **sw-waiting**
 
 ## CODING TASK
-Make a change to the Service Worker script. It can be anything. Then, refresh the page to pick up the new Service Worker. Take a look at the `Application` tab in Chrome's developer tools and select `Service Workers`. At this point, you should see an active Service Worker and a new Service Worker waiting.
+Make a change to the `Service Worker` script. It can be anything. Then, refresh the page to pick up the new `Service Worker`. 
+
+Take a look at the `Application` tab in Chrome's developer tools and select `Service Workers`. At this point, you should see an active `Service Worker` and a new `Service Worker` in the waiting position.
 
 - - -
 

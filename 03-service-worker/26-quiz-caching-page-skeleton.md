@@ -9,11 +9,11 @@ $ git checkout task-page-skeleton
 Once the task is complete, enter the Task ID: **serve-skeleton**
 
 ## CODING TASK
-You only need to edit the Service Worker to complete this task, so head over to `public/js/sw/index.js`.
+You only need to edit the `Service Worker` to complete this task, so head over to `public/js/sw/index.js`.
 
-The root page (`/`) is currently being cached and served in the fetch event. Your job is to cache the page `/skeleton` instead and serve that if the root page is requested.
+The root page (`/`) is currently being cached and served in the `fetch` event. Your job is to cache the page `/skeleton` instead and serve that if the root page is requested.
 
-Once you've changed the code, refresh the page. The browser will see the new Service Worker and notify the user. Click the refresh button to update to the latest version.
+Once you've changed the code, refresh the page. The browser will see the new `Service Worker` and notify the user. Click the refresh button to update to the latest version.
 
 You can confirm your changes are working by viewing the source on the root page. The source should be minimal. Head to the test page, enter the Task ID and press enter.
 
@@ -23,9 +23,9 @@ You can confirm your changes are working by viewing the source on the root page.
   
   Start by updating `staticCacheName` to `wittr-static-v4`.
   
-  Next, inside the `install` event handler, instead of caching `/` inside of `cache.addAll`, cache `/skeleton`:
+  Next, inside the `install` event, instead of caching `/` inside of `cache.addAll`, cache `/skeleton`:
   
-  Finally, the `fetch` event handler looks like:
+  Finally, the `fetch` event looks like:
   
   ```js
   self.addEventListener('fetch', function(event) {

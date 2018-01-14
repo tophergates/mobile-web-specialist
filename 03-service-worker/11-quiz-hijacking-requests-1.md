@@ -25,8 +25,8 @@ Over in the Service Worker script file, located at `public/js/sw/index.js`, alte
           'Content-Type': 'text/html'
         }
       })
-    )
-  })
+    );
+  });
   ```
     
   </p>

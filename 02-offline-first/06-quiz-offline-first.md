@@ -11,15 +11,10 @@ Which of these are offline first techniques?
 
 <details>
   <summary>ANSWER</summary>
-  <p>
-    - [x] Deliver the page's header and    content from a cache on the device, then attempt to fetch updated content from the network.
-  
-    - [x] Deliver the page's header from a cache, then attempt to fetch the content from the network.
-  
-    - [ ] Attempt to fetch the page from the network, and if that fails, show cached content.
-  
-    - [ ] Attempt to fetch the page from the network, if that fails, show an error page from a cache.
-  </p>
+  <ul>
+    <li>Deliver the page's header and    content from a cache on the device, then attempt to fetch updated content from the network.</li>
+    <li>Deliver the page's header from a cache, then attempt to fetch the content from the network.</li>
+  </ul>
   <p>
     If we can get something on the screen without waiting for the network, that is offline-first.
   </p>

@@ -16,22 +16,24 @@ Take a look at the code located in `public/js/sw/index.js`. Rather than respondi
 <details>
   <summary>SOLUTION</summary>
   <p>
-    ```js
-    self.addEventListener('fetch', function(event) {
-      event.respondWith(
-        fetch(event.request)
-          .then(function(response) {
-            if(response.status === 404) {
-              return fetch('/imgs/dr-evil.gif');
-            }
-            return response;
-          })
-          .catch(function() {
-            return new Response("Uh oh, that totally failed!");
-          })
-      );
-    });
-    ```
+  
+  ```js
+  self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      fetch(event.request)
+        .then(function(response) {
+          if(response.status === 404) {
+            return fetch('/imgs/dr-evil.gif');
+          }
+          return response;
+        })
+        .catch(function() {
+          return new Response("Uh oh, that totally failed!");
+        })
+    );
+  });
+  ```
+  
   </p>
 </details>
 

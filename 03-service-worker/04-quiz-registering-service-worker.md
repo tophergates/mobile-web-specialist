@@ -14,7 +14,8 @@ Register the Service Worker
 <details>
   <summary>SOLUTION</summary>
   <p>
-  Inside of the file ```public/js/main/IndexController.js``` locate the ```IndexController.prototype._registerServiceWorker``` function and enter the following inside the function body:
+  
+  Inside of the file `public/js/main/IndexController.js` locate the `IndexController.prototype._registerServiceWorker` function and enter the following inside the function body:
   
   ```js
   if (!navigator.serviceWorker) return;

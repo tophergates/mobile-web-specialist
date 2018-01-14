@@ -14,15 +14,17 @@ Take a look at the code located in `public/js/sw/index.js`. As you can see, your
 <details>
   <summary>SOLUTION</summary>
   <p>
-    ```js
-    self.addEventListener('fetch', function(event) {
-      if (event.request.url.endsWith('.jpg')) {
-        event.respondWith(
-          fetch('/imgs/dr-evil.gif')
-        )
-      }
-    })
-    ```
+  
+  ```js
+  self.addEventListener('fetch', function(event) {
+    if (event.request.url.endsWith('.jpg')) {
+      event.respondWith(
+        fetch('/imgs/dr-evil.gif')
+      )
+    }
+  })
+  ```
+  
   </p>
 </details>
 

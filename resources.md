@@ -3,7 +3,7 @@ I have been reading through the discussion forums and the Slack channel and have
 
 ## QUESTIONS & ANSWERS
 <details>
-  <summary><strong>How does the scholarship work?<strong></summary>
+  <summary><strong>How does the scholarship work?</strong></summary>
   <p>
     Right now, you are one of the 10,000 students selected for the first phase of a 3-month course. After this phase, Google and Udacity will select 1,000 students to earn a full nanodegree Mobile Web Specialist, this nanodegree has a duration of 6-months.
   </p>

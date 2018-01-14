@@ -17,15 +17,11 @@ navigator.serviceWorker.register('/sw.js', {
 
 <details>
   <summary>ANSWER</summary>
-  <p>
-    - [ ] /
-    - [ ] /sw.js
-    - [ ] /foo
-    - [ ] /foo.html
-    - [x] /foo/
-    - [x] /foo/bar/index.html
-    - [x] /foo/bar
-  </p>
+  <ul>
+    <li>/foo/</li>
+    <li>/foo/bar/index.html</li>
+    <li>/foo/bar</li>
+  </ul>
   <p>
     The Service Worker will control any page URL that begins with the scope. Remember, the trailing slash is important!
   </p>

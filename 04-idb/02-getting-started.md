@@ -129,7 +129,7 @@ dbPromise.then(function(db) {
 });
 ```
 
-Since the `get` method returns a `Promise` which resolves to the value we're looking for:
+Since the `get` method returns a `Promise` which resolves to the value we're looking for, we can chain on another `.then` to retrieve the value in the callback:
 
 ```js
 import idb from 'idb';

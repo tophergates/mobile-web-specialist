@@ -20,3 +20,7 @@ If your site works `offline first`, users are going to notice that it loads reli
 We look.. forward to a we... b that works.. whatev...er the connec...tion i-
 
 <img src="http://code2care.org/pages/unable-to-connect-to-the-internet-google-chrome/images/Chrome%20Error%20Unable%20to%20access%20to%20the%20Internet.png">
+
+---
+
+Next: [Onward](../05-next-up/01-onward.md)

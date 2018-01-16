@@ -91,7 +91,7 @@ I have been reading through the discussion forums and the Slack channel and have
 <details>
   <summary><strong>What are some good resources on Service Workers?</strong></summary>
   <ul>
-    <li>The Offline Cookbook<br>https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#stale-while-revalidate</li>
+    <li>The Offline Cookbook<br>https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/</li>
     <li>Service Worker Resources<br>https://jakearchibald.github.io/isserviceworkerready/resources.html</li>
     <li>MDN Service Worker API<br>https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API</li>
     <li>Service Worker Primer<br>https://developers.google.com/web/fundamentals/primers/service-workers/</li>

@@ -1,7 +1,9 @@
 # RESOURCES
+
 I have been reading through the discussion forums and the Slack channel and have pulled what I felt were some of the most useful questions and answers as well as resources which may be helpful for this program.
 
 ## QUESTIONS & ANSWERS
+
 <details>
   <summary><strong>How does the scholarship work?</strong></summary>
   <p>
@@ -89,6 +91,7 @@ I have been reading through the discussion forums and the Slack channel and have
 <details>
   <summary><strong>What are some good resources on Service Workers?</strong></summary>
   <ul>
+    <li>The Offline Cookbook<br>https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#stale-while-revalidate</li>
     <li>Service Worker Resources<br>https://jakearchibald.github.io/isserviceworkerready/resources.html</li>
     <li>MDN Service Worker API<br>https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API</li>
     <li>Service Worker Primer<br>https://developers.google.com/web/fundamentals/primers/service-workers/</li>
@@ -96,22 +99,20 @@ I have been reading through the discussion forums and the Slack channel and have
   </ul>
 </details>
 
+<br>
+
+<details>
+  <summary><strong>What are some good resources on IndexedDB?</strong></summary>
+  <ul>
+    <li>IndexedDB Promised Library<br>https://github.com/jakearchibald/idb</li>
+    <li>IndexedDB API (MDN)<br>https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API</li>
+  </ul>
+</details>
+
 ## STUDENT CONTRIBUTIONS
+
 In addition to these notes and resources I have put together, there are other student and/or former student contributions which may be useful to you:
 
-  - Course Errata<br>https://docs.google.com/spreadsheets/d/1ToPUQgJO3VNqgE6SBfDMPtnkfsLoU5XOzc_qL4381Fg/edit?usp=sharing (contributed by [Daniel](https://discussions.udacity.com/u/tuf37504))
+* Course Errata<br>https://docs.google.com/spreadsheets/d/1ToPUQgJO3VNqgE6SBfDMPtnkfsLoU5XOzc_qL4381Fg/edit?usp=sharing (contributed by [Daniel](https://discussions.udacity.com/u/tuf37504))
 
-  - Article: 5 things you should do to get selected for the 2nd phase of your Google-Udacity Scholarship<br>https://medium.com/udacity/the-5-things-you-need-to-do-to-get-selected-for-the-2nd-phase-of-your-google-udacity-scholarship-649f22376030 (contributed by [George Szabo](https://medium.com/@george_szabo))
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Article: 5 things you should do to get selected for the 2nd phase of your Google-Udacity Scholarship<br>https://medium.com/udacity/the-5-things-you-need-to-do-to-get-selected-for-the-2nd-phase-of-your-google-udacity-scholarship-649f22376030 (contributed by [George Szabo](https://medium.com/@george_szabo))
